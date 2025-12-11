@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import "./index.css";
 import "./App.css";
+import InfoBlock from "@/components/infoblock"
+import InfoBlockCentered from "@/components/InfoBlockCentered"
+
 
 const ColorBox = ({
   label,
@@ -46,7 +49,22 @@ function App() {
 
   return (
     <>
+    <div>
+      <InfoBlock
+        title="Reading List"
+        number={3}
+        description="This describes the section in more detail."
+      />
+    </div>
     
+    <div>
+      <InfoBlockCentered
+        title="Cottage Layers"
+        number={2}
+        description="This describes the section in more detail."
+      />
+    </div>
+
       <main className="min-h-screen bg-background text-foreground p-8 md:p-20 max-w-6xl mx-auto space-y-24">
 
         {/* Header */}
@@ -65,6 +83,11 @@ function App() {
               INSTRUMENT SANS
             </span>
             <span className="label-xs text-[var(--content-secondary)]">HEADINGS</span>
+          </div>
+
+          <div className="gap-2 pb-2">
+            <h1>Section Title</h1>
+            <p className="body-l">Lorem ipsum dolor sit amet consectetur. Libero platea elit ultrices odio. Consectetur pellentesque molestie erat etiam massa.</p>
           </div>
 
           <div className="space-y-10">
