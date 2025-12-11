@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./index.css";
 import "./App.css";
 
@@ -21,13 +21,28 @@ const ColorBox = ({
 };
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
   useEffect(() => {
-    const root = document.documentElement;
-    if (darkMode) root.classList.add("dark");
-    else root.classList.remove("dark");
-  }, [darkMode]);
+    // Check system preference
+    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    // Apply dark mode based on system preference
+    const updateDarkMode = (e: MediaQueryListEvent | MediaQueryList) => {
+      if (e.matches) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    };
+    
+    // Set initial state
+    updateDarkMode(darkModeMediaQuery);
+    
+    // Listen for changes
+    darkModeMediaQuery.addEventListener('change', updateDarkMode);
+    
+    // Cleanup
+    return () => darkModeMediaQuery.removeEventListener('change', updateDarkMode);
+  }, []);
 
   return (
     <>
