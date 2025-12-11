@@ -299,7 +299,7 @@
      TAILWIND COMPATIBILITY MAPPINGS
      ============================================ */
   --background: var(--background-primary);
-  --foreground: var(--content-primary);
+  --foreground: var(--background-secondary);
   --card: var(--background-primary);
   --card-foreground: var(--content-primary);
   --popover: var(--background-primary);
@@ -331,7 +331,8 @@
   --sidebar-ring: var(--border-focus);
 }
 
-.dark {
+@media (prefers-color-scheme: dark) {
+  :root {
   /* ============================================
      SEMANTIC TOKENS - Dark Mode
      ============================================ */
@@ -398,11 +399,11 @@
      TAILWIND COMPATIBILITY MAPPINGS
      ============================================ */
   --background: var(--background-primary);
-  --foreground: var(--content-primary);
+  --foreground: var(--background-secondary);
   --card: var(--background-secondary);
-  --card-foreground: var(--content-primary);
+  --card-foreground: var(--background-secondary);
   --popover: var(--background-secondary);
-  --popover-foreground: var(--content-primary);
+  --popover-foreground: var(--background-secondary);
   --primary: var(--background-brand);
   --primary-foreground: var(--content-primary-inverse);
   --secondary: var(--background-tertiary);
@@ -428,6 +429,7 @@
   --sidebar-accent-foreground: var(--content-primary);
   --sidebar-border: var(--border-primary);
   --sidebar-ring: var(--border-focus);
+}
 }
 
 @layer base {
