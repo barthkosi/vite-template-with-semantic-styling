@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import "./index.css";
 import "./App.css";
-import InfoBlock from "@/components/infoBlock"
-import InfoBlockCentered from "@/components/infoBlockCentered"
+import InfoBlock from "@/components/InfoBlock"
+import InfoBlockCentered from "@/components/InfoBlockCentered"
 
 
 const ColorBox = ({
