@@ -68,7 +68,7 @@ function App() {
       <main className="min-h-screen bg-background text-foreground p-8 md:p-20 max-w-6xl mx-auto space-y-24">
 
         {/* Header */}
-        <header className="border-b border-border pb-8">
+        <header className="flex flex-col items-center border-b border-border pb-8">
           <h1 className="mb-4">Typography System</h1>
           <p className="body-l text-[var(--content-secondary)] max-w-2xl">
             Complete typography system with primitives and semantic tokens.
@@ -270,7 +270,7 @@ function App() {
               The base body text is perfect for main content.
             </p>
 
-            <div className="flex gap-3 flex-wrap">
+            <div className="items-center gap-3">
               <button className="label-m bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-[var(--background-brand-hover)] transition-colors">
                 Get Started
               </button>
