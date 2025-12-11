@@ -33,7 +33,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-baseline">
             <div className="md:col-span-1 text-xs font-mono text-gray-400">&lt;h1&gt; or .h1</div>
             <div className="md:col-span-3">
-              <h1>Heading Level 1</h1>
+              <h1>Heading Level t 1</h1>
             </div>
           </div>
 

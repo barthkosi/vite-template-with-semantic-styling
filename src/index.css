@@ -183,10 +183,12 @@
     @apply bg-background text-foreground;
     font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
   }
-  
-  /* Base heading styles using HTML tags */
+   /* Shared properties for all headings */
+   h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-heading);
+    color: var(--sidebar-border);
+  }
   h1 {
-    font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
     font-weight: 700;
     font-size: 2rem; /* 32px */
     line-height: 2.5rem; /* 40px */
@@ -194,7 +196,6 @@
   }
   
   h2 {
-    font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
     font-weight: 700;
     font-size: 2rem; /* 32px */
     line-height: 2.5rem; /* 40px */
@@ -202,7 +203,6 @@
   }
   
   h3 {
-    font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
     font-weight: 700;
     font-size: 1.75rem; /* 28px */
     line-height: 2rem; /* 32px */
@@ -210,7 +210,6 @@
   }
   
   h4 {
-    font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
     font-weight: 600;
     font-size: 1.5rem; /* 24px */
     line-height: 1.75rem; /* 28px */
@@ -218,7 +217,6 @@
   }
   
   h5 {
-    font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
     font-weight: 600;
     font-size: 1.25rem; /* 20px */
     line-height: 1.5rem; /* 24px */
@@ -226,7 +224,6 @@
   }
   
   h6 {
-    font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
     font-weight: 600;
     font-size: 1.125rem; /* 18px */
     line-height: 1.5rem; /* 24px */
@@ -248,9 +245,37 @@
     }
   }
   
+  h3 {
+    font-weight: 700;
+    font-size: 1.75rem; /* 28px */
+    line-height: 2rem; /* 32px */
+    letter-spacing: -0.8px;
+  }
+  
+  h4 {
+    font-weight: 600;
+    font-size: 1.5rem; /* 24px */
+    line-height: 1.75rem; /* 28px */
+    letter-spacing: -0.6px;
+  }
+  
+  h5 {
+    font-weight: 600;
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.5rem; /* 24px */
+    letter-spacing: -0.4px;
+  }
+  
+  h6 {
+    font-weight: 600;
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.5rem; /* 24px */
+    letter-spacing: -0.2px;
+  }
+  
   @media (min-width: 1024px) {
     h1 {
-      font-size: 3.5rem; /* 56px */
+      font-size: var(--font-size-10xl); /* 56px */
       line-height: 4rem; /* 64px */
       letter-spacing: -1.2px;
     }
@@ -290,7 +315,7 @@
 @layer components {
   /* DISPLAY */
   .display {
-    font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-family-heading);
     font-weight: 700;
     font-size: 2.5rem; /* 40px */
     line-height: 3rem; /* 48px */
@@ -315,7 +340,7 @@
   
   /* HEADING UTILITY CLASSES */
   .h1 {
-    font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-family-heading);
     font-weight: 700;
     font-size: 2rem; /* 32px */
     line-height: 2.5rem; /* 40px */
@@ -339,13 +364,21 @@
   }
   
   .h2 {
-    font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-family-heading);
     font-weight: 700;
     font-size: 2rem; /* 32px */
     line-height: 2.5rem; /* 40px */
     letter-spacing: -1px;
   }
-  
+
+  @media (min-width: 768px) {
+    .h2 {
+      font-size: 2.5rem; /* 40px */
+      line-height: 3rem; /* 48px */
+      letter-spacing: -1.2px;
+    }
+  }
+
   @media (min-width: 1024px) {
     .h2 {
       font-size: 2.5rem; /* 40px */
@@ -355,11 +388,19 @@
   }
   
   .h3 {
-    font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-family-heading);
     font-weight: 700;
     font-size: 1.75rem; /* 28px */
     line-height: 2rem; /* 32px */
     letter-spacing: -0.8px;
+  }
+  
+  @media (min-width: 768px) {
+    .h3 {
+      font-size: 2.5rem; /* 40px */
+      line-height: 3rem; /* 48px */
+      letter-spacing: -1.2px;
+    }
   }
   
   @media (min-width: 1024px) {
@@ -371,11 +412,19 @@
   }
   
   .h4 {
-    font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-family-heading);
     font-weight: 600;
     font-size: 1.5rem; /* 24px */
     line-height: 1.75rem; /* 28px */
     letter-spacing: -0.6px;
+  }
+  
+  @media (min-width: 768px) {
+    .h4 {
+      font-size: 2.5rem; /* 40px */
+      line-height: 3rem; /* 48px */
+      letter-spacing: -1.2px;
+    }
   }
   
   @media (min-width: 1024px) {
@@ -387,11 +436,19 @@
   }
   
   .h5 {
-    font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-family-heading);
     font-weight: 600;
     font-size: 1.25rem; /* 20px */
     line-height: 1.5rem; /* 24px */
     letter-spacing: -0.4px;
+  }
+  
+  @media (min-width: 768px) {
+    .h5 {
+      font-size: 2.5rem; /* 40px */
+      line-height: 3rem; /* 48px */
+      letter-spacing: -1.2px;
+    }
   }
   
   @media (min-width: 1024px) {
@@ -403,13 +460,21 @@
   }
   
   .h6 {
-    font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-family-heading);
     font-weight: 600;
     font-size: 1.125rem; /* 18px */
     line-height: 1.5rem; /* 24px */
     letter-spacing: -0.2px;
   }
-  
+
+  @media (min-width: 768px) {
+    .h6 {
+      font-size: 2.5rem; /* 40px */
+      line-height: 3rem; /* 48px */
+      letter-spacing: -1.2px;
+    }
+  }
+
   @media (min-width: 1024px) {
     .h6 {
       font-size: 1.25rem; /* 20px */
@@ -420,7 +485,7 @@
   
   /* BODY TEXT */
   .body-l {
-    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-family-body);
     font-weight: 400;
     font-size: 1.125rem; /* 18px */
     line-height: 1.5rem; /* 24px */
@@ -428,7 +493,7 @@
   }
   
   .body-l-medium {
-    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-family-body);
     font-weight: 500;
     font-size: 1.125rem; /* 18px */
     line-height: 1.5rem; /* 24px */
@@ -436,7 +501,7 @@
   }
   
   .body-m {
-    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-family-body);
     font-weight: 400;
     font-size: 1rem; /* 16px */
     line-height: 1.5rem; /* 24px */
@@ -444,7 +509,7 @@
   }
   
   .body-m-medium {
-    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-family-body);
     font-weight: 500;
     font-size: 1rem; /* 16px */
     line-height: 1.5rem; /* 24px */
@@ -452,7 +517,7 @@
   }
   
   .body-s {
-    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-family-body);
     font-weight: 400;
     font-size: 0.875rem; /* 14px */
     line-height: 1.375rem; /* 22px */
@@ -460,7 +525,7 @@
   }
   
   .body-s-medium {
-    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-family-body);
     font-weight: 500;
     font-size: 0.875rem; /* 14px */
     line-height: 1.375rem; /* 22px */
@@ -469,7 +534,7 @@
   
   /* LABELS */
   .label-l {
-    font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-family-label);
     font-weight: 600;
     font-size: 1.125rem; /* 18px */
     line-height: 1.25rem; /* 20px */
@@ -477,7 +542,7 @@
   }
   
   .label-m {
-    font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-family-label);
     font-weight: 500;
     font-size: 1rem; /* 16px */
     line-height: 1.25rem; /* 20px */
@@ -485,7 +550,7 @@
   }
   
   .label-s {
-    font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-family-label);
     font-weight: 500;
     font-size: 0.875rem; /* 14px */
     line-height: 1.125rem; /* 18px */
@@ -493,7 +558,7 @@
   }
   
   .label-xs {
-    font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-family-label);
     font-weight: 500;
     font-size: 0.75rem; /* 12px */
     line-height: 1rem; /* 16px */
