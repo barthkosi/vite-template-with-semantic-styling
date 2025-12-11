@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import "./index.css";
 import "./App.css";
-import InfoBlock from "@/components/infoblock"
+import InfoBlock from "@/components/InfoBlock"
 import InfoBlockCentered from "@/components/InfoBlockCentered"
 
 
