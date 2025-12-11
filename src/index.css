@@ -448,123 +448,123 @@
   }
   h1 {
     font-weight: 700;
-    font-size: 2rem; /* 32px */
-    line-height: 2.5rem; /* 40px */
+    font-size: var(--font-size-7xl);
+    line-height: var(--line-height-7xl);
     letter-spacing: -1px;
   }
   
   h2 {
     font-weight: 700;
-    font-size: 2rem; /* 32px */
-    line-height: 2.5rem; /* 40px */
+    font-size: var(--font-size-5xl);
+    line-height: var(--line-height-5xl);
     letter-spacing: -1px;
   }
   
   h3 {
     font-weight: 700;
-    font-size: 1.75rem; /* 28px */
-    line-height: 2rem; /* 32px */
+    font-size: var(--font-size-3xl);
+    line-height: var(--line-height-3xl);
     letter-spacing: -0.8px;
   }
   
   h4 {
     font-weight: 600;
-    font-size: 1.5rem; /* 24px */
-    line-height: 1.75rem; /* 28px */
+    font-size: var(--font-size-2xl);
+    line-height: var(--line-height-2xl);
     letter-spacing: -0.6px;
   }
   
   h5 {
     font-weight: 600;
-    font-size: 1.25rem; /* 20px */
-    line-height: 1.5rem; /* 24px */
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-xl);
     letter-spacing: -0.4px;
   }
   
   h6 {
     font-weight: 600;
-    font-size: 1.125rem; /* 18px */
-    line-height: 1.5rem; /* 24px */
+    font-size: var(--font-size-l);
+    line-height: var(--line-height-l);
     letter-spacing: -0.2px;
   }
   
   /* Responsive heading styles */
   @media (min-width: 768px) {
     h1 {
-      font-size: 2.5rem; /* 40px */
-      line-height: 3rem; /* 48px */
+      font-size: var(--font-size-9xl);
+      line-height: var(--line-height-9xl); 
       letter-spacing: -1.2px;
     }
     
     h2 {
-      font-size: 2rem; /* 32px */
-      line-height: 2.5rem; /* 40px */
+      font-size: var(--font-size-7xl);
+      line-height: var(--line-height-7xl);
       letter-spacing: -1px;
     }
   }
   
   h3 {
     font-weight: 700;
-    font-size: 1.75rem; /* 28px */
-    line-height: 2rem; /* 32px */
+    font-size: var(--font-size-5xl);
+    line-height: var(--line-height-5xl);
     letter-spacing: -0.8px;
   }
   
   h4 {
     font-weight: 600;
-    font-size: 1.5rem; /* 24px */
-    line-height: 1.75rem; /* 28px */
+    font-size: var(--font-size-2xl);
+    line-height: var(--line-height-2xl);
     letter-spacing: -0.6px;
   }
   
   h5 {
     font-weight: 600;
-    font-size: 1.25rem; /* 20px */
-    line-height: 1.5rem; /* 24px */
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-xl);
     letter-spacing: -0.4px;
   }
   
   h6 {
     font-weight: 600;
-    font-size: 1.125rem; /* 18px */
-    line-height: 1.5rem; /* 24px */
+    font-size: var(--font-size-l);
+    line-height: var(--line-height-l);
     letter-spacing: -0.2px;
   }
   
   @media (min-width: 1024px) {
     h1 {
-      font-size: var(--font-size-10xl); /* 56px */
-      line-height: 4rem; /* 64px */
+      font-size: var(--font-size-12xl);
+      line-height: var(--line-height-12xl);
       letter-spacing: -1.2px;
     }
     
     h2 {
-      font-size: 2.5rem; /* 40px */
-      line-height: 3rem; /* 48px */
+      font-size: var(--font-size-10xl);
+      line-height: var(--line-height-10xl);
       letter-spacing: -1.2px;
     }
     
     h3 {
-      font-size: 2.25rem; /* 36px */
-      line-height: 2.5rem; /* 40px */
+      font-size: var(--font-size-8xl);
+      line-height: var(--line-height-8xl);
       letter-spacing: -1px;
     }
     
     h4 {
-      font-size: 2rem; /* 32px */
-      line-height: 2.25rem; /* 36px */
+      font-size: var(--font-size-6xl);
+      line-height: var(--line-height-6xl);
       letter-spacing: -1px;
     }
     
     h5 {
-      font-size: 1.5rem; /* 24px */
-      line-height: 1.75rem; /* 28px */
+      font-size: var(--font-size-4xl);
+      line-height: var(--line-height-4xl);
       letter-spacing: -0.6px;
     }
     
     h6 {
-      font-size: 1.25rem; /* 20px */
-      line-height: 1.5rem; /* 24px */
+      font-size: var(--font-size-2xl);
+      line-height: var(--line-height-2xl);
       letter-spacing: -0.4px;
     }
   }
@@ -575,7 +575,7 @@
   .display {
     font-family: var(--font-family-heading);
     font-weight: 700;
-    font-size: 2.5rem; /* 40px */
+    font-size: var(--font-size-10xl);
     line-height: 3rem; /* 48px */
     letter-spacing: -1.2px;
     color: var(--content-primary);
@@ -583,7 +583,7 @@
   
   @media (min-width: 768px) {
     .display {
-      font-size: 3.5rem; /* 56px */
+      font-size: var(--font-size-12xl);
       line-height: 4rem; /* 64px */
       letter-spacing: -1.2px;
     }
@@ -591,7 +591,7 @@
   
   @media (min-width: 1024px) {
     .display {
-      font-size: 4.5rem; /* 72px */
+      font-size: var(--font-size-14xl);
       line-height: 5rem; /* 80px */
       letter-spacing: -2px;
     }
@@ -736,7 +736,7 @@
 
   @media (min-width: 1024px) {
     .h6 {
-      font-size: 1.25rem; /* 20px */
+      font-size: var(--font-size-2xl);
       line-height: 1.5rem; /* 24px */
       letter-spacing: -0.4px;
     }
