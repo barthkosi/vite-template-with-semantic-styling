@@ -70,6 +70,8 @@
   --letter-spacing-5xl: -1.8px;
   --letter-spacing-6xl: -2px;
   --letter-spacing-7xl: -2.2px;
+  --letter-spacing-8xl: -2.4px;
+  --letter-spacing-9xl: -2.6px;
   
    /* Primitives */
 
@@ -450,7 +452,7 @@
     font-weight: 700;
     font-size: var(--font-size-7xl);
     line-height: var(--line-height-7xl);
-    letter-spacing: -1px;
+    letter-spacing: var(--letter-spacing-xl);
   }
   
   h2 {
@@ -535,7 +537,7 @@
     h1 {
       font-size: var(--font-size-12xl);
       line-height: var(--line-height-12xl);
-      letter-spacing: -1.2px;
+      letter-spacing: var(--letter-spacing-2xl);
     }
     
     h2 {
